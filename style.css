@@ -1,7 +1,7 @@
 body {
     background-color:rgb(172, 233, 248);
     background-image: url("blue.png");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -31,7 +31,7 @@ h1 {
     animation-timing-function: ease-in;
 }
 #cloud2 {
-    top: 300px;
+    top: 200px;
     left: 100px;
     width:200px;
     height:150px;
@@ -44,7 +44,7 @@ h1 {
     to {left: 600px;}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     h1 {
         padding: 20px;
         width: 160px;
