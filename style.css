@@ -1,8 +1,13 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color:rgb(172, 233, 248);
-    background-image: url("blue.png");
-    background-repeat: no-repeat;
+    background-image: url("images/blue.png");
+    background-repeat: repeat-y;
     background-position: center;
+    background-size: cover;
 }
 
 h1 {
@@ -11,62 +16,145 @@ h1 {
     margin: auto;
     padding: 20px;
     width: 600px;
-    height: 120px;
+    height: 150px;
     color: #003366;
     font-size: 46px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
-.cloud {
-    position:relative;
+pre {
+    display: inline-block;
+    font-size: 24px;
+    color:rgba(6, 60, 73, 0.575);
+    margin: 300px 40px 100px;
+    text-align: left;
+    border-style: none none none dashed;
+    border-left-width: 6px;
+    border-color: rgba(0, 81, 255, 0.199);
 }
 
 #cloud1 {
-    top: 20px;
+    top: 40px;
     left: 20px;
     width: 400px;
     height: 300px;
-    animation: movingcloud 10s infinite alternate-reverse;
+    margin: 40px;
+    padding: 60px;
+    position: absolute;
+    animation: movingcloud 14s infinite alternate-reverse;
     animation-timing-function: ease-in;
 }
 #cloud2 {
-    top: 200px;
+    top: 120px;
     left: 100px;
     width:200px;
     height:150px;
-    animation: movingcloud 10s infinite alternate-reverse;
+    position: relative;
+    animation: movingcloud 14s infinite alternate-reverse;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes movingcloud {
     from {left: 0px;}
-    to {left: 600px;}
+    to {left: 400px;}
 }
 
-@media (max-width: 800px) {
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 4px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.footer {
+    background-color: #96cdf17e;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 820px) { 
+    pre {
+        margin: 180px 30px 40px;
+        font-size: 24px;
+        border-left-width: 4px;
+    }
+
+    #cloud1 {
+        top: 60px;
+        left: 5px;
+        width: 300px;
+        height: 240px;
+    }
+    #cloud2 {
+        top: 10px;
+        left: 10px;
+        width: 180px;
+        height: 100px;
+    }
+
+    @keyframes movingcloud {
+        from {left: 0px;}
+        to {left: 200px;}
+    }
+
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
     h1 {
         padding: 20px;
-        width: 160px;
-        height: 120px;
+        width: 180px;
+        height: 160px;
         font-size: 26px;
+    }
+
+    pre {
+        margin: 180px 30px 20px;
+        font-size: 16px;
+        border-left-width: 4px;
     }
     
     #cloud1 {
-        top: 40px;
+        top: 60px;
         left: 5px;
-        width: 200px;
-        height: 150px;
+        width: 240px;
+        height: 200px;
     }
     #cloud2 {
-        top: 60px;
+        top: 10px;
         left: 10px;
-        width: 80px;
-        height: 60px;
+        width: 100px;
+        height: 80px;
     }
     
     @keyframes movingcloud {
         from {left: 0px;}
-        to {left: 200px;}
+        to {left: 100px;}
+    }
+
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
 }
