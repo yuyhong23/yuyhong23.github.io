@@ -73,7 +73,7 @@ li a:hover {
     animation-timing-function: ease-in;
 }
 #cloud2 {
-    top: 0px;
+    top: 20px;
     left: 100px;
     width:200px;
     height:150px;
@@ -84,7 +84,7 @@ li a:hover {
 
 @keyframes movingcloud {
     from {left: 0px;}
-    to {left: 400px;}
+    to {left: 240px;}
 }
 
 .about {
