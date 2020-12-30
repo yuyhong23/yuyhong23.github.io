@@ -78,13 +78,18 @@ li a:hover {
     width:200px;
     height:150px;
     position: relative;
-    animation: movingcloud 14s infinite alternate-reverse;
+    animation: movingcloud2 14s infinite alternate-reverse;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes movingcloud {
     from {left: 0px;}
     to {left: 240px;}
+}
+
+@keyframes movingcloud2 {
+    from {left: 0px;}
+    to {left: 100px;}
 }
 
 .about {
@@ -166,6 +171,11 @@ li a:hover {
         to {left: 240px;}
     }
 
+    @keyframes movingcloud2 {
+        from {left: 0px;}
+        to {left: 20px;}
+    }
+
     .column {
         -ms-flex: 50%;
         flex: 50%;
@@ -174,6 +184,14 @@ li a:hover {
 }
 
 @media (max-width: 600px) {
+    body {
+        background-color:rgb(172, 233, 248);
+        background-image: url("images/blue.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
     h1 {
         padding: 20px;
         width: 180px;
@@ -183,6 +201,7 @@ li a:hover {
 
     pre {
         margin: 140px 10px 20px;
+        margin-left: auto;
         font-size: 16px;
         border-left-width: 2px;
     }
@@ -190,7 +209,7 @@ li a:hover {
     .nav {
         position: absolute;
         top: 460px;
-        right: 140px;
+        right: 120px;
         float: none;
     }
     
@@ -215,6 +234,11 @@ li a:hover {
     @keyframes movingcloud {
         from {left: 0px;}
         to {left: 200px;}
+    }
+
+    @keyframes movingcloud2 {
+        from {left: 0px;}
+        to {left: 100px;}
     }
 
     .column {
