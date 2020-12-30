@@ -290,7 +290,7 @@ li a:hover {
     .nav {
         position: absolute;
         top: 480px;
-        right: 100px;
+        right: 50px;
         float: none;
     }
     
@@ -319,7 +319,7 @@ li a:hover {
 
     @keyframes movingcloud2 {
         from {left: 0px;}
-        to {left: 24px;}
+        to {left: 140px;}
     }
 
     .column {
