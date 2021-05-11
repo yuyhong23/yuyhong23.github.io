@@ -1545,11 +1545,6 @@ input, select, textarea {
 		}
 
 /* Image */
-
-	.image {
-		display: inline-block;
-	}
-
 		.image img {
 			display: block;
 			width: 100%;
