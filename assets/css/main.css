@@ -2006,7 +2006,7 @@ input, select, textarea {
 					-webkit-flex-shrink: 0;
 					-ms-flex-shrink: 0;
 					flex-shrink: 0;
-					width: 17em;
+					width: 20em;
 					height: 100%;
 				}
 
@@ -2113,7 +2113,7 @@ input, select, textarea {
 
 						#main > .panel.intro .pic {
 							height: 25em;
-							width: 100%;
+							/* width: 64%; */
 						}
 
 						#main > .panel.intro header {
