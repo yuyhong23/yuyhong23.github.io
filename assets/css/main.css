@@ -1306,7 +1306,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/blue.png");
+		background-image: url("images/overlay.png"), url("images/cloud.jpeg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -2135,11 +2135,51 @@ input, select, textarea {
 						}
 
 				}
+/* project_font */
+	.project_font {
+		color:rgb(36, 35, 35);
+		text-align: center;
+		/* padding: 2em 0 0 0; */
+		font-size: 2emß;
+	}
+
+		.project_font a {
+			color: #ddd;
+			/* color: rgba(255, 255, 255, 0.65); */
+			color:rgb(26, 59, 204);
+			-moz-transition: color .25s ease-in-out;
+			-webkit-transition: color .25s ease-in-out;
+			-ms-transition: color .25s ease-in-out;
+			transition: color .25s ease-in-out;
+		}
+
+			.project_font a:hover {
+				color:teal;
+			}
+
+/* link font */
+	.arrow{
+		color:black
+	}
+
+	#link_font {
+		color: #ddd;
+		/* color: rgba(255, 255, 255, 0.65); */
+		color:rgb(61, 62, 66);
+		-moz-transition: color .25s ease-in-out;
+		-webkit-transition: color .25s ease-in-out;
+		-ms-transition: color .25s ease-in-out;
+		transition: color .25s ease-in-out;
+	}
+
+		#link_font:hover {
+			color:rgb(26, 59, 204);
+		}
 
 /* Footer */
 
 	#footer {
-		color: rgba(5, 20, 71, 0.45);
+		color:whitesmoke;
 		text-align: center;
 		padding: 2em 0 0 0;
 		font-size: 0.75em;
@@ -2148,7 +2188,7 @@ input, select, textarea {
 		#footer a {
 			color: #ddd;
 			/* color: rgba(255, 255, 255, 0.65); */
-			color:#1a2f91;
+			color:black;
 			-moz-transition: color .25s ease-in-out;
 			-webkit-transition: color .25s ease-in-out;
 			-ms-transition: color .25s ease-in-out;
