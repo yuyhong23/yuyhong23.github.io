@@ -1533,7 +1533,7 @@ input, select, textarea {
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: #aaa;
+			color: rgb(54, 120, 218);
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1589,7 +1589,7 @@ input, select, textarea {
 		transition: background-color .25s ease-in-out;
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #59aaca;
+		background-color:rgb(54, 120, 218);
 		color: #ffffff;
 		border: 0;
 		cursor: pointer;
@@ -2146,7 +2146,7 @@ input, select, textarea {
 		.project_font a {
 			color: #ddd;
 			/* color: rgba(255, 255, 255, 0.65); */
-			color:rgb(26, 59, 204);
+			color:rgb(54, 120, 218);
 			-moz-transition: color .25s ease-in-out;
 			-webkit-transition: color .25s ease-in-out;
 			-ms-transition: color .25s ease-in-out;
@@ -2173,7 +2173,7 @@ input, select, textarea {
 	}
 
 		#link_font:hover {
-			color:rgb(26, 59, 204);
+			color:rgb(54, 120, 218);
 		}
 
 /* Footer */
