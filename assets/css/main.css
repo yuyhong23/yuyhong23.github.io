@@ -2135,6 +2135,31 @@ input, select, textarea {
 						}
 
 				}
+
+/* Skill Bars */
+
+	.skill-bar-container {
+		position: relative;
+		width: 100%;
+		border-radius: 4px;
+		background-color: whitesmoke;
+		margin-bottom: 0.5em;
+	}
+
+	.skill-name {
+        color: rgb(36, 35, 35);
+		font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+	}
+
+	.skill-bar{	
+		display: block;
+		border-radius: 4px;
+		height: 25px;
+	}
+
+	.level5 { width: 80%; background-color: cornflowerblue}
+	.level4 { width: 60%; background-color: rgb(124, 164, 238)}
+
 /* project_font */
 	.project_font {
 		color:rgb(36, 35, 35);
@@ -2146,7 +2171,7 @@ input, select, textarea {
 		.project_font a {
 			color: #ddd;
 			/* color: rgba(255, 255, 255, 0.65); */
-			color:rgb(54, 120, 218);
+			color:rgb(36, 35, 35);
 			-moz-transition: color .25s ease-in-out;
 			-webkit-transition: color .25s ease-in-out;
 			-ms-transition: color .25s ease-in-out;
@@ -2154,7 +2179,7 @@ input, select, textarea {
 		}
 
 			.project_font a:hover {
-				color:teal;
+				color:rgb(54, 120, 218);
 			}
 
 /* link font */
